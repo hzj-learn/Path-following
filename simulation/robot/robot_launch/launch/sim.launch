@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<launch>
+  <!-- Gazebo -->
+  <include file="$(find robot_launch)/launch/gazebo.launch" />
+
+  <!-- 发布RTK位姿 -->
+  <include file="$(find pub_rtk_point)/launch/pub_rtk_point.launch" />
+
+  <!-- 输出伪RTK定位 -->
+  <include file="$(find fake_rtk_localization)/launch/fake_rtk_localization.launch" />
+
+  <!-- 换行状态切换 -->
+  <include file="$(find waypoints_pub_action)/launch/waypoints_pub_action.launch" />
+
+  <!-- 生成全局路径 -->
+  <include file="$(find global_waypoints_generator)/launch/global_waypoints_generator.launch" />
+
+  <!-- 显示全局路径 -->
+  <include file="$(find vis_global_path)/launch/vis_global_path.launch" />
+
+  <!-- 路径点更新 -->
+  <include file="$(find waypoint_updater)/launch/waypoint_updater.launch" />
+
+  <!-- 识别滴灌状态切换 -->
+  <include file="$(find detect_action)/launch/detect_action.launch" />
+
+  <!-- 使用单线激光停障 -->
+  <include file="$(find laser_detection)/launch/laser_detection.launch" />
+
+  <!-- twist类型转换 -->
+  <include file="$(find twist_convert)/launch/twist_convert.launch" />
+
+  <!-- 速度优先级输出 -->
+  <include file="$(find base_vel_mux)/launch/base_vel_mux.launch" />
+
+  <node pkg="rqt_robot_steering" type="rqt_robot_steering" name="rqt_robot_steering" />
+
+  <!-- rviz-->
+  <node pkg="rviz" type="rviz" name="rviz" args="-d $(find robot_launch)/rviz/nav.rviz" output="screen"/>
+
+</launch>

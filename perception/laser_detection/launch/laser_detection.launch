@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<launch>
+  <node name="laser_detection" pkg="laser_detection" type="laser_detection" output="screen" respawn="true" >
+  </node>
+</launch>

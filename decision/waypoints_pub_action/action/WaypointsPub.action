@@ -1,0 +1,11 @@
+# Define the goal
+# Specify which dishwasher we want to use
+float64 x
+float64 y
+float64 yaw
+---
+# Define the result
+string state_complete
+---
+# Define a feedback message
+string state

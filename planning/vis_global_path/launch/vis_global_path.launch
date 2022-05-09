@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<launch>
+  <node name="vis_global_path_node" pkg="vis_global_path" type="vis_global_path_node" output="screen" respawn="true" >
+    <param name="sampling_rate" value="0.1" /><!-- 采样间隔 -->
+  </node>
+
+  <!--node name="rviz" pkg="rviz" type="rviz" args="-d $(find vis_global_path)/rviz/vis_global_path.rviz"/-->
+</launch>

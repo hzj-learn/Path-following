@@ -1,0 +1,4 @@
+<?xml version="1.0"?>
+<launch>
+  <node pkg="fake_rtk_localization" type="fake_rtk_localization_node" name="fake_rtk_localization_node" output="screen" respawn="true"/>
+</launch>

@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<launch>
+  <node name="detect_action_node" pkg="detect_action" type="detect_action_node" output="screen" respawn="true" >
+    <param name="robot_length" value="1.0" />
+    <param name="robot_width" value="0.5" />
+  </node>
+</launch>

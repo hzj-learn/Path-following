@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<launch>
+  <node name="global_waypoints_generator_node" pkg="global_waypoints_generator" type="global_waypoints_generator_node" output="screen" respawn="true" >
+    <param name="sampling_rate" value="0.1" /><!-- 采样间隔 -->
+  </node>
+</launch>

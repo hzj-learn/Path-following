@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<launch>
+  <node name="WaypointsPub_client" pkg="waypoints_pub_action" type="WaypointsPub_client" output="screen" respawn="true" />
+
+  <node name="WaypointsPub_server" pkg="waypoints_pub_action" type="WaypointsPub_server" output="screen" respawn="true" />
+</launch>

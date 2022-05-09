@@ -1,0 +1,3 @@
+<launch>
+    <node pkg="pub_rtk_point" type="pub_rtk_point" name="pub_rtk_point" output="screen"/>
+</launch>
